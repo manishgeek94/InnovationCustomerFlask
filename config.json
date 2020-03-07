@@ -1,0 +1,16 @@
+{
+  "params":
+{
+  "local_server" : "True",
+  "local_uri": "mysql://root:@localhost/customerinnovation",
+  "prod_uri": "mysql://root:@prodhost/customerinnovation",
+  "website_name": "Customer Innovation Center",
+  "gmail-user": "cutemanish786@gmail.com",
+  "gmail-password": "Manraj9449  "
+
+
+}
+
+
+
+}
