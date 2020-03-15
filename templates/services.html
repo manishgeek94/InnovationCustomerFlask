@@ -2,7 +2,7 @@
 {% block body %}
 
 
-
+<!--Fetch it using for loop-->
 {% for services in services_items %}
 <div class="row">
       <div class="col-md-4 mb-5">
@@ -22,6 +22,14 @@
 </div>
 
     {% endfor %}
+
+
+
+<div class="clearfix">
+            <a class="btn btn-primary float-left " href="{{prev}}">&larr; Previous</a>
+          <a class="btn btn-primary float-right" href="{{next1}}">Next &rarr;</a>
+        </div>
+
 <!--      <div class="col-md-4 mb-5">-->
 <!--        <div class="card h-100">-->
 <!--          <img class="card-img-top" src="{{ url_for('static', filename='img/customer2.jpg') }}" alt="image loading issue">-->

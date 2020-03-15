@@ -6,7 +6,13 @@
   "prod_uri": "mysql://root:@prodhost/customerinnovation",
   "website_name": "Customer Innovation Center",
   "gmail-user": "cutemanish786@gmail.com",
-  "gmail-password": "Manraj9449  "
+  "gmail-password": "Manraj9449  ",
+  "login-image": "manish.jpg",
+  "admin_user": "Manish",
+  "admin_password": "Manish123",
+  "uploader_location": "C:\\Users\\ManishKumar\\PycharmProjects\\Customer Data\\static\\img",
+  "no_of_services": 2
+
 
 
 }

@@ -1,0 +1,66 @@
+{% extends 'layout.html' %}
+
+
+{% block body %}
+
+
+
+<h1 style = "display:inline-block; margin-left:650px;color:red;"> <strong>Welcome to Admin Dashboard!!!!</strong></h1>
+
+<h2>Basic Actions</h2>
+<a href="/edit/0"><button type="button" class="btn btn-primary">Add New Services</button></a>
+<a href="/logout"><button type="button" class="btn btn-primary">Logout</button></a>
+<a href="/users"><button type="button" class="btn btn-primary">Registered User</button></a>
+<hr>
+<br>
+<br>
+
+
+<h2>Upload File</h2>
+<form action = "/uploader" method="post" enctype="multipart/form-data">
+
+    <input type="file" name="file1">
+
+    <button class="btn btn-primary">Submit</button>
+
+
+
+</form>
+
+
+<hr>
+<h1><strong>Edit Services</strong></h1>
+<table class="table">
+    <thead>
+      <tr>
+        <th>Ser_no</th>
+        <th>Ser_title</th>
+        <th>content</th>
+        <th>Edit</th>
+        <th>Delete</th>
+      </tr>
+    </thead>
+    <tbody>
+    {% for services in services_items %}
+      <tr>
+        <td>{{services.ser_no}}</td>
+        <td>{{services.ser_title}}</td>
+        <td>{{services.content[0:30]}}</td>
+          <td><a href="/edit/{{services.ser_no}}" ><button type="button" class="btn btn-primary">Edit</button></a></td>
+          <td><a href="/delete/{{services.ser_no}}"><button type="button" class="btn btn-primary">Delete</button></a></td>
+      </tr>
+    {% endfor %}
+
+    </tbody>
+
+  </table>
+<hr>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+{% endblock %}

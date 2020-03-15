@@ -1,0 +1,41 @@
+{% extends "layout.html" %}
+{% block body %}
+
+<table class="table">
+    <thead>
+      <tr>
+        <th>Registered ID</th>
+        <th>User Name</th>
+        <th>Email ID</th>
+        <th>Services</th>
+      </tr>
+    </thead>
+    <tbody>
+    {% for users in all_user %}
+      <tr>
+        <td>{{users.reg_id}}</td>
+        <td>{{users.Name}}</td>
+        <td>{{users.email}}</td>
+        <td>{{users.Services}}</td>
+    {% endfor %}
+
+    </tbody>
+
+  </table>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+{% endblock %}
