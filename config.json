@@ -6,7 +6,7 @@
   "prod_uri": "mysql://root:@prodhost/customerinnovation",
   "website_name": "Customer Innovation Center",
   "gmail-user": "",
-  "gmail-password":"": ,
+  "gmail-password":"",
   "login-image": "manish.jpg",
   "admin_user": "Manish",
   "admin_password": "Manish123",
